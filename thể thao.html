@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .banner {
+          background: url("anh3.jpg") no-repeat center center;
+          background-size: cover;
+          padding-top: 30rem;
+          position: relative;
+        }
+        .noidung p {
+           text-align: center;
+           font-size: 20px;
+           font-style: italic;
+           line-height: 1.8;
+           color: #3A533A;
+      
+        }
+       .image-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            margin-bottom: 30px;
+        }
+
+        .image-card {
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            position: relative;
+            cursor: pointer;
+        }
+        .image-card img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            transition: all 0.3s ease;
+        }
+        .image-card:hover img {
+            transform: scale(1.1);
+        }
+        .image-info {
+            padding: 1px;
+            background: white;
+            position: relative;   
+        }
+        .image-overlay {
+            position: absolute;
+            top: 10;
+            left: 10;
+            width: 100%;
+            height: 100%;
+            background: rgba(37, 99, 235, 0.1);
+        }
+        .quaylaitrangchu {
+           position: absolute;
+           top: 20px;
+           right: 20px;
+           background: linear-gradient(to right, #ff758c, #ff7eb3);
+           color: white;
+           padding: 12px 25px;
+           border-radius: 25px;
+           font-size: 16px;
+           border: none;
+           transition: all 0.3s ease;
+           box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .quaylaitrangchu:hover {
+           box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+        }
+        .footer {
+           text-align: center !important;
+           background-color: rgba(0, 128, 0, 0.3);
+           color: #4A5C6A;
+           padding: 0.05rem 0;
+           margin-top: auto;
+        }
+    </style>
+</head>
+  <body>
+     <div class="banner">
+      <a class="quaylaitrangchu" href="20t11.html">Trang Chủ</a>
+     </div>
+      <h1 style="font-size: 50px;text-align: center;text-shadow:4px 4px 8px lightcyan;font-style: italic;">Thể Thao chào mừng</h1>
+     <div class="noidung">
+<p style="font-size: 25px">Nhân dịp chào mừng Ngày Nhà giáo Việt Nam 20/11, nhằm thể hiện tinh thần đoàn kết và tri ân thầy cô. Lớp chúng em - 12A4 đã hào hứng tham gia thi đấu bóng chuyền. Tiếng reo hò cổ vũ vang lên trên sân trường, tạo nên một không khí náo nhiệt và đầy phấn khởi. Hoạt động không chỉ giúp rèn luyện sức khỏe mà còn gắn kết tình bạn, đồng thời thể hiện lòng biết ơn sâu sắc của tập thể lớp 12A4 đối với thầy cô giáo.</p>
+     </div>     
+     <div>
+      <h2 style="text-align: center;color: darkolivegreen; font-size: 35px;">Hoạt động gắn kết - tỏ lòng biết ơn</h2>
+       <div class="image-grid">
+         <div class="image-card">
+          <div class="image-overlay"></div>
+            <img src="tt1.jpg" alt="1">
+            <div class="image-info">
+              <h3 style= "font-style: italic;">"Sân trường như bức tranh màu rực rỡ. Bóng chuyền bay cao, tinh thần rạng ngời."</h3>
+            </div>
+          </div>
+        <div class="image-card">
+          <div class="image-overlay"></div>
+            <img src="tt2.jpg" alt="2">
+            <div class="image-info">
+              <h3 style= "font-style: italic;">"Thể thao không chỉ là về việc giành chiến thắng mà còn là về việc vượt qua chính mình."</h3>
+            </div>
+          </div>
+        </div>
+        <div class="image-grid">
+         <div class="image-card">
+          <div class="image-overlay"></div>
+            <img src="tt3.jpg" alt="3">
+            <div class="image-info">
+               <h3 style= "font-style: italic;">"Trong ánh hoàng hôn nhuộm sắc trời. Từng bước chân vững, ước mơ khơi nguồn."</h3>
+            </div>
+          </div>
+         <div class="image-card">
+          <div class="image-overlay"></div>
+            <img src="tt4.jpg" alt="4">
+            <div class="image-info">
+              <h3 style= "font-style: italic;">"Không có gì có thể thay thế được sự kiên trì. Tài năng không thể, thiên tài cũng không thể."</h3>
+            </div>
+          </div>
+        </div>
+       </div> 
+  <footer class="footer">
+    <p style="font-size: 2rem;">© Website designed by Group 1 </p>
+  </footer>
+</body>
+</html>
