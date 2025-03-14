@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .banner {
+          background: url("anh1.jpg") no-repeat center center;
+          background-size: cover;
+          padding-top: 40rem;
+          position: relative;
+        }
+        .noidung p {
+           text-align: center;
+           font-size: 20px;
+           font-style: italic;
+           line-height: 1.8;
+           color: #3A533A;
+        }
+        .image {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 50px;
+            margin-bottom: 30px;
+        }
+        .video {
+            display: grid;
+            grid-template-columns: 5fr 5fr;
+            gap: 50px;
+            margin-bottom: 30px;
+        }
+        .video video {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            transition: all 0.3s ease;
+        }
+        .video-card {
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            position: relative;
+            cursor: pointer;
+        }
+        .video-card .image-info {
+            padding: 1px;
+            background: white;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        .image-card {
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            position: relative;
+            cursor: pointer;
+        }       
+        .image-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: all 0.3s ease;
+        }
+        .image-card:hover img {
+            transform: scale(1.1);
+        }
+        .image-info {
+            padding: 1px;
+            background: white;
+            position: relative;   
+        }
+        .image-overlay {
+            position: absolute;
+            top: 10;
+            left: 10;
+            width: 100%;
+            height: 100%;
+            background: rgba(37, 99, 235, 0.1);
+        }
+        .quaylaitrangchu {
+           position: absolute;
+           top: 20px;
+           right: 20px;
+           background: linear-gradient(to right, #ff758c, #ff7eb3);
+           color: white;
+           padding: 12px 25px;
+           border-radius: 25px;
+           font-size: 16px;
+           border: none;
+           transition: all 0.3s ease;
+           box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .quaylaitrangchu:hover {
+           box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+        }
+        .footer {
+           text-align: center !important;
+           background-color: rgba(0, 128, 0, 0.3);
+           color: #4A5C6A;
+           padding: 0.05rem 0;
+           margin-top: auto;
+        }
+    </style>
+</head>
+ <body>
+  <div class="banner">
+   <a class="quaylaitrangchu" href="index.html">Trang Chủ</a>
+  </div>
+    <h1 style="font-size: 50px;text-align: center;text-shadow:4px 4px 8px lightcyan;font-style: italic;">Văn Nghệ chào mừng</h1>
+    <div class="noidung">
+     <p style="font-size: 25px">Lớp 12A4 háo hức chuẩn bị cho tiết mục văn nghệ đặc biệt trong buổi lễ tri ân thầy cô – những “người lái đò” thầm lặng đã dìu dắt bao thế hệ học trò. Dưới ánh đèn sân khấu, từng lời ca, điệu múa vang lên đầy cảm xúc, gửi gắm lòng biết ơn sâu sắc đến những người thầy, người cô đã tận tụy dạy dỗ suốt bao năm qua. Tiết mục không chỉ là món quà tri ân mà còn là một kỷ niệm đẹp của tập thể 12A4. Những nụ cười, những ánh mắt, tất cả hòa quyện, tạo nên một khoảnh khắc khó quên trong lòng mỗi người.</p>
+    </div>     
+    <div>
+     <h2 style="text-align: center;color: darkolivegreen; font-size: 35px;">Tiết mục hấp dẫn - Kỉ niệm khó quên</h2>
+      <div class="image">
+       <div class="image-card">
+        <div class="image-overlay"></div>
+         <img src="vn02.jpg" alt="1">
+         <div class="image-info">
+            <h3 style= "font-style: italic;">"Từng bước nhẹ nhàng, sắc hồng tươi sáng. Tà váy thướt tha, dịu dàng giữa nắng."</h3>
+         </div>
+        </div>
+        <div class="image-card">
+         <div class="image-overlay"></div>
+          <img src="vn01.jpg" alt="2">
+          <div class="image-info">
+             <h3 style= "font-style: italic;">"Lung linh phố tối, rực sáng những nụ cười. Thanh xuân hoà nhịp, gắn kết trọn niềm vui."</h3>
+          </div>
+         </div>
+        <div class="image-card">
+         <div class="image-overlay"></div>
+          <img src="vn03.jpg" alt="3">
+          <div class="image-info">
+              <h3 style= "font-style: italic;">"Sen hồng toả hương, nâng niu ân tình sâu đậm. Tà áo nhẹ tung bay, tri ân người dạy dỗ tháng năm dài."</h3>
+           </div>
+         </div>
+        </div>
+      <div class="video"> 
+        <div class="video-card">
+          <div class="image-overlay"></div>
+            <video src="vn1.mp4" controls muted poster></video>
+            <div class="image-info">
+               <h3 style= "font-style: italic;">"Sen hồng đón nắng, toả sáng niềm tri ân. Thầy cô như ngọn đèn, soi đường bao ước mơ."</h3>
+            </div>
+          </div>
+        <div class="video-card">
+          <div class="image-overlay"></div>
+            <video src="vn2.mp4" controls muted poster></video>
+            <div class="image-info">
+                <h3 style= "font-style: italic;">"Gieo yêu thương bằng tâm, trao hy vọng qua năm. Tri ân những người dìu dắt, in đậm ký ức ngàn năm."</h3>
+            </div>
+          </div>
+        </div>
+    </div>
+  <footer class="footer">
+    <p>© Website designed by Group 1 </p>
+    <p>© ĐT liên hệ: 0943128093 </p>
+  </footer>
+</body>
+</html>
